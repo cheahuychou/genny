@@ -47,11 +47,14 @@ Actors:
   Phases:
   - *Nop
   - *Nop
-  - ExternalPhaseConfig:
-      Path: ../../phases/execution/CreateIndexPhase.yml
-      Key: InsertData
-      Parameters:
-        db: *db
+  - Repeat: 1
+    Database: *db
+    Threads: 1
+    CollectionCount: 1
+    DocumentCount: 150000
+    BatchSize: 10000
+    Document:
+      x: {^RandomInt: {min: -1000, max: 1000}}
   - *Nop
 
 - Name: HedgedReadsWithStaggering
