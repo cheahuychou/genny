@@ -74,4 +74,4 @@ Actors:
       OperationCommand:
         count: Collection0
         query: {x: {$gt: {^RandomInt: {min: -1000, max: 1000}}}}
-        $readPreference: {mode: nearest, hedge: {enabled: true, delay: false}}
+        $readPreference: {mode: nearest, hedge: {enabled: true}}
