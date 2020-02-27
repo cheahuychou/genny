@@ -51,8 +51,8 @@ Actors:
     Database: *db
     Threads: 1
     CollectionCount: 1
-    DocumentCount: 150000
-    BatchSize: 10000
+    DocumentCount: 1500
+    BatchSize: 1000
     Document:
       x: {^RandomInt: {min: -1000, max: 1000}}
   - *Nop
