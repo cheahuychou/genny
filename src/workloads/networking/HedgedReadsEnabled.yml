@@ -57,7 +57,7 @@ Actors:
       x: {^RandomInt: {min: -1000, max: 1000}}
   - *Nop
 
-- Name: HedgedReadsSimultaneousDispatch
+- Name: HedgedReadsEnabled
   Type: RunCommand
   Threads: 100
   Phases:
