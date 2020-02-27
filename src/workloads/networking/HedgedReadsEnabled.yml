@@ -64,7 +64,7 @@ Actors:
   - *Nop
   - *Nop
   - *Nop
-  - GlobalRate: 1000 per 1 second
+  - GlobalRate: 100 per 1 second
     Duration: 8 minutes
     ThrowOnFailure: false
     Database: *db
