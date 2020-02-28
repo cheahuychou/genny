@@ -4,7 +4,7 @@ Owner: "@mongodb/service-architecture"
 Clients:
   Default:
     QueryOptions:
-      maxPoolSize: 1000
+      maxPoolSize: 5000
       socketTimeoutMS: 5000
       connectTimeoutMS: 5000
 
@@ -65,7 +65,7 @@ Actors:
   - *Nop
   - *Nop
   - GlobalRate: 1000 per 1 second
-    Duration: 10 minutes
+    Duration: 8 minutes
     ThrowOnFailure: false
     Database: *db
     Operation:
