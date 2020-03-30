@@ -69,9 +69,9 @@ Actors:
     ThrowOnFailure: false
     Database: *db
     Operation:
-      OperationMetricsName: Count
+      OperationMetricsName: Find
       OperationName: RunCommand
       OperationCommand:
-        count: Collection0
-        query: {x: {$gt: {^RandomInt: {min: -1000, max: 1000}}}}
+        find: Collection0
+        filter: {x: {$gt: {^RandomInt: {min: -1000, max: 1000}}}}
         $readPreference: {mode: nearest, hedge: {enabled: true}}
