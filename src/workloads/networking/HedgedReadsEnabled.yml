@@ -74,4 +74,5 @@ Actors:
       OperationCommand:
         find: Collection0
         filter: {x: {$gt: {^RandomInt: {min: -1000, max: 1000}}}}
+        batchSize: 1
         $readPreference: {mode: nearest, hedge: {enabled: true}}
